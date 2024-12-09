@@ -34,9 +34,9 @@ Desenvolver uma prova de conceito (PoC) que demonstre a capacidade de:
 
 ## 💻 Stack Tecnológica
 
-- **Linguagem**: Node.js, Python, Java ou C#.
-- **Ferramentas**: Express, @faker-js/faker (opcional para simulação de dados)
-- **Banco de Dados**: SQL Server
+- **Linguagens Permitidas**: Node.js, Python, Java, ou C#.
+- **Ferramentas**: Express, @faker-js/faker (opcional para simulação de dados).
+- **Banco de Dados**: SQL Server (ou equivalente relacional).
 
 ### ⚙️ Scripts Configurados no `package.json`
 
@@ -48,7 +48,7 @@ Desenvolver uma prova de conceito (PoC) que demonstre a capacidade de:
 
 ### 1️⃣ Integração com as APIs
 
-- Criar rotinas em Node.js para consumir e validar dados de duas APIs.
+- Criar rotinas para consumir e validar dados de duas APIs.
 
 ### 2️⃣ Normalização e Armazenamento
 
@@ -83,7 +83,8 @@ Desenvolver uma prova de conceito (PoC) que demonstre a capacidade de:
 - Construir um dashboard em **Microsoft Power BI**, contendo:
   - Visão geral de tarefas realizadas e pendentes por colaborador.
   - Progresso dos objetivos vinculados a cada departamento.
-  - Gráficos interativos que permitam a exploração dos dados por tempo, estado e prioridades.
+  - Gráficos interativos e animados que permitam a exploração dos dados por tempo, estado e prioridades.
+  - Um design visualmente atrativo e bem estruturado, destacando informações relevantes com clareza.
 
 ### 7️⃣ Boas Práticas de BI
 
@@ -98,7 +99,7 @@ Desenvolver uma prova de conceito (PoC) que demonstre a capacidade de:
 2. **🌟 Modelo Dimensional**: Star schema funcional, respondendo a perguntas como:
    - Quantas tarefas cada colaborador realizou?
    - Quantas tarefas foram cumpridas para cada objetivo?
-3. **📊 Dashboard no Power BI**: Dashboard funcional e interativo.
+3. **📊 Dashboard no Power BI**: Dashboard funcional, visualmente atrativo, interativo e animado.
 4. **⚡ Execução Automatizada**: Pipeline de ETL funcional.
 5. **📈 Boas Práticas**: Banco otimizado, seguindo melhores práticas de BI.
 
@@ -106,7 +107,7 @@ Desenvolver uma prova de conceito (PoC) que demonstre a capacidade de:
 
 1. **📂 Código-Fonte**
 
-   - Scripts em Node.js para coleta, normalização e ETL.
+   - Scripts em uma das linguagens permitidas para coleta, normalização e ETL.
 
 2. **🗄️ Base de Dados**
 
@@ -121,11 +122,17 @@ Desenvolver uma prova de conceito (PoC) que demonstre a capacidade de:
 4. **📊 Dashboard no Power BI**
 
    - Arquivo `.pbix` com o dashboard configurado.
+   - Gráficos animados e design atrativo.
 
 5. **📊 Relatórios**
 
    - Exemplos de consultas baseados no modelo dimensional.
    - Análise das boas práticas implementadas.
+
+6. **🧠 Criatividade e Liberdade**
+
+   - O candidato pode propor soluções criativas para otimizar a implementação.
+   - Liberdade para usar bibliotecas, frameworks e padrões que julgar apropriados.
 
 ## 🔍 Exemplos de DAX para o Power BI
 
@@ -150,3 +157,13 @@ SUMX(
 ```
 
 Com esses cálculos, o dashboard pode fornecer uma visão abrangente e detalhada dos dados disponíveis.
+
+## 📤 Entrega Final
+
+- Todo o projeto deve ser entregue em um repositório no **GitHub**.
+  - O repositório deve conter:
+    - Código-fonte completo.
+    - Arquivos de banco de dados (se aplicável).
+    - Dashboard no formato `.pbix`.
+    - Documentação completa.
+  - O README do repositório deve descrever como executar o projeto e analisar os resultados.
