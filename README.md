@@ -1,41 +1,81 @@
-### Node Webservice com Express e Faker.js
-Este é um webservice simples desenvolvido em Node.js utilizando o framework Express e a biblioteca Faker.js para gerar dados aleatórios no formato JSON.
+<div align="center">
 
-🚀 Funcionalidades
-Gera tarefas aleatórias no formato especificado.
-Permite requisições via curl, Postman ou outros clientes HTTP.
-Retorna entre 1 a 10 tarefas simuladas com dados aleatórios.
-🛠️ Requisitos
-Node.js (versão 14 ou superior)
-npm (geralmente instalado com o Node.js)
-📦 Instalação
-Clone este repositório:
+# Node.js Webservice
 
-git clone https://github.com/seu-usuario/node-webservice.git
-cd node-webservice
-Instale as dependências:
+</div>
 
-npm install
-🏃 Inicialização do Servidor
-Modo padrão:
+## Objetivo
 
-npm start
-O servidor estará disponível em http://localhost:3000.
+Este projeto implementa um webservice simples desenvolvido em **Node.js** utilizando o framework **Express** e a biblioteca **Faker.js** para gerar dados aleatórios no formato JSON.
 
-Modo de desenvolvimento (com recarregamento automático, necessário instalar o nodemon):
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
 
-npm run dev
-📋 Uso via curl
-Requisição de Exemplo
-Faça uma requisição para a rota /api/v1.0/tasks passando os headers obrigatórios:
+![Node.js](https://img.shields.io/badge/Node.js-%5E14.0-brightgreen)
 
+## Funcionalidades
+
+- **Geração de Tarefas Aleatórias:**
+  - Gera tarefas no formato especificado com dados simulados.
+  - Suporta requisições por ferramentas como **curl** e **Postman**.
+  - Retorna entre 1 e 10 tarefas aleatórias por requisição.
+
+- **Interface de API RESTful:**
+  - Endpoints configurados para acessar os dados gerados dinamicamente.
+
+## Pré-Requisitos
+
+- [Node.js (versão 14 ou superior)](https://nodejs.org/)
+- [npm (gerenciador de pacotes do Node.js)](https://www.npmjs.com/)
+
+## Tecnologias Utilizadas
+
+- **Node.js:** Plataforma de desenvolvimento.
+- **Express:** Framework para criar aplicações web.
+- **Faker.js:** Biblioteca para geração de dados simulados.
+
+## Instalação
+
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/node-webservice.git
+   cd node-webservice
+   ```
+
+2. **Instale as Dependências:**
+   ```bash
+   npm install
+   ```
+
+## Inicialização do Servidor
+
+1. **Modo Padrão:**
+   ```bash
+   npm start
+   ```
+   O servidor estará disponível em [http://localhost:3000](http://localhost:3000).
+
+2. **Modo de Desenvolvimento (com recarregamento automático):**
+   - Necessário instalar o **nodemon**.
+     ```bash
+     npm run dev
+     ```
+
+## Uso via `curl`
+
+**Requisição de Exemplo:**
+
+Faça uma requisição para a rota `/api/v1.0/tasks` passando os headers obrigatórios:
+```bash
 curl -g "http://localhost:3000/api/v1.0/tasks" \
-    -X GET \
-    -H "Version: HTTP/1.0" \
-    -H "App-Key: 1a219437eab893dc115509bb85e06d77" \
-    -H "User-Token: 9flMUzLxQtxohKGZjU5" \
-    -H "Content-Type: application/json"
-Resposta de Exemplo
+-X GET \
+-H "Version: HTTP/1.0" \
+-H "App-Key: 1a219437eab893dc115509bb85e06d77" \
+-H "User-Token: 9flMUzLxQtxohKGZjU5" \
+-H "Content-Type: application/json"
+```
+
+**Resposta de Exemplo:**
+```json
 {
   "tasks": [
     {
@@ -70,30 +110,25 @@ Resposta de Exemplo
     }
   ]
 }
-🧪 Testando com Postman
-Abra o Postman.
-Crie uma nova requisição:
-Método: GET
-URL: http://localhost:3000/api/v1.0/tasks
-Adicione os seguintes headers:
-Version: HTTP/1.0
-App-Key: 1a219437eab893dc115509bb85e06d77
-User-Token: 9flMUzLxQtxohKGZjU5
-Envie a requisição e veja a resposta.
-🧰 Tecnologias Utilizadas
-Node.js - Plataforma de desenvolvimento.
-Express - Framework para criar aplicações web.
-Faker.js - Biblioteca para geração de dados simulados.
-🤝 Contribuições
-Contribuições são sempre bem-vindas! Para contribuir:
+```
 
-Faça um fork do projeto.
-Crie uma branch com sua funcionalidade ou correção de bug:
-git checkout -b minha-feature
-Faça o commit das alterações:
-git commit -m "Adiciona nova funcionalidade"
-Envie para o repositório remoto:
-git push origin minha-feature
-Abra um pull request no GitHub.
-📝 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+## Testando com Postman
+
+1. Abra o **Postman**.
+2. Crie uma nova requisição:
+   - **Método:** `GET`
+   - **URL:** `http://localhost:3000/api/v1.0/tasks`
+
+3. Adicione os seguintes headers:
+   - `Version: HTTP/1.0`
+   - `App-Key: 1a219437eab893dc115509bb85e06d77`
+   - `User-Token: 9flMUzLxQtxohKGZjU5`
+
+## Responsável Atual
+
+[Tiago Lino](https://github.com/tiagolinocertacon)
+
+## Licença Propretária
+ 
+Este projeto é licenciado sob a Licença Proprietária de propriedade exclusiva de [Certacon](https://certacon.com.br/). Nenhuma parte deste software pode ser copiada, modificada, distribuída ou usada sem a permissão explícita da [Certacon](https://certacon.com.br/). Todos os direitos reservados.
+
