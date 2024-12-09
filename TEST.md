@@ -34,7 +34,7 @@ Desenvolver uma prova de conceito (PoC) que demonstre a capacidade de:
 
 ## 💻 Stack Tecnológica
 
-- **Linguagem**: Node.js
+- **Linguagem**: Node.js, Python, Java ou C#.
 - **Ferramentas**: Express, @faker-js/faker (opcional para simulação de dados)
 - **Banco de Dados**: SQL Server
 
