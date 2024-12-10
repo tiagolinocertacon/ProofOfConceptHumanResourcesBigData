@@ -48,13 +48,7 @@ Este projeto implementa um webservice simples desenvolvido em **Node.js** utiliz
 
 ## Inicialização do Servidor
 
-1. **Modo Padrão:**
-   ```bash
-   npm start
-   ```
-   
-
-2. **Modo de Desenvolvimento (com recarregamento automático):**
+1. **Modo de Desenvolvimento (com recarregamento automático):**
    - Necessário instalar o **nodemon**.
      ```bash
      npm run dev
