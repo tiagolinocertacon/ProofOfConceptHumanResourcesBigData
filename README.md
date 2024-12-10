@@ -124,10 +124,6 @@ curl -g "http://localhost:3000/api/v1.0/tasks" \
    - `App-Key: 1a219437eab893dc115509bb85e06d77`
    - `User-Token: 9flMUzLxQtxohKGZjU5`
 
-## Responsável Atual
-
-[Tiago Lino](https://github.com/tiagolinocertacon)
-
 ## Licença Propretária
  
 Este projeto é licenciado sob a Licença Proprietária de propriedade exclusiva de [Certacon](https://certacon.com.br/). Nenhuma parte deste software pode ser copiada, modificada, distribuída ou usada sem a permissão explícita da [Certacon](https://certacon.com.br/). Todos os direitos reservados.
