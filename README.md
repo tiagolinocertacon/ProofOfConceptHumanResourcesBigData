@@ -14,7 +14,7 @@ Este projeto implementa um webservice simples desenvolvido em **Node.js** utiliz
 
 ## Funcionalidades
 
-- **Geração de Tarefas Aleatórias:**
+- **Geração de Tarefas e Objetivos do Colaborador de maneira Aleatórias:**
   - Gera tarefas no formato especificado com dados simulados.
   - Suporta requisições por ferramentas como **curl** e **Postman**.
   - Retorna entre 1 e 10 tarefas aleatórias por requisição.
