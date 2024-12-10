@@ -65,7 +65,7 @@ Este projeto implementa um webservice simples desenvolvido em **Node.js** utiliz
      ```bash
      npm run dev-rh
      ```
-    O servidor estará disponível em [http://localhost:4000](http://localhost:4000).
+     O servidor estará disponível em [http://localhost:4000](http://localhost:4000).
 
 ## Uso via `curl`
 
