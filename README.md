@@ -37,7 +37,7 @@ Este projeto implementa um webservice simples desenvolvido em **Node.js** utiliz
 
 1. **Clone o Repositório:**
    ```bash
-   git clone [https://github.com/seu-usuario/node-webservice.git](https://github.com/tiagolinocertacon/ProofOfConceptHumanResourcesBigData.git)
+   git clone https://github.com/tiagolinocertacon/ProofOfConceptHumanResourcesBigData.git
    cd ProofOfConceptHumanResourcesBigData
    ```
 
