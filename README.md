@@ -37,8 +37,8 @@ Este projeto implementa um webservice simples desenvolvido em **Node.js** utiliz
 
 1. **Clone o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/node-webservice.git
-   cd node-webservice
+   git clone [https://github.com/seu-usuario/node-webservice.git](https://github.com/tiagolinocertacon/ProofOfConceptHumanResourcesBigData.git)
+   cd ProofOfConceptHumanResourcesBigData
    ```
 
 2. **Instale as Dependências:**
@@ -52,18 +52,197 @@ Este projeto implementa um webservice simples desenvolvido em **Node.js** utiliz
    ```bash
    npm start
    ```
-   O servidor estará disponível em [http://localhost:3000](http://localhost:3000).
+   
 
 2. **Modo de Desenvolvimento (com recarregamento automático):**
    - Necessário instalar o **nodemon**.
      ```bash
      npm run dev
      ```
+     O servidor estará disponível em [http://localhost:3000](http://localhost:3000).
+
+   - Necessário instalar o **nodemon**.
+     ```bash
+     npm run dev-rh
+     ```
+    O servidor estará disponível em [http://localhost:4000](http://localhost:4000).
 
 ## Uso via `curl`
 
 **Requisição de Exemplo:**
-
+Faça uma requisição para a rota `/api/v1.0/objectives/:idusuario` passando os headers obrigatórios:
+```bash
+curl --location 'http://localhost:4000/api/v1.0/objectives/10'
+```
+**Resposta de Exemplo(Objectives): **
+```json
+{
+    "success": true,
+    "total_objectives": 2,
+    "data": [
+        {
+            "id_user": "10",
+            "id": 7554003830818236,
+            "id_parent": 0,
+            "id_owner": 1,
+            "id_department": 1381,
+            "objective": "Persistent contextually-based product",
+            "percentage_status": "15.74",
+            "status": 0,
+            "private": 1,
+            "people_allowed": null,
+            "people_edit": null,
+            "dt_start": "2024-09-06T14:18:06.462Z",
+            "dt_end": "2025-08-11T23:43:23.293Z",
+            "id_period": 0,
+            "signaling": 1,
+            "tags": [
+                "laughter"
+            ],
+            "key_results": [
+                {
+                    "id": 2793910904164579,
+                    "id_okr": 7554003830818236,
+                    "id_owner": 1,
+                    "text": "Tempora corrumpo caute clibanus depulso votum aeneus absque aranea curatio.",
+                    "description": "Tamquam cilicium titulus astrum solutio. Absque accendo fuga acies magni pax solvo atavus bestia. Arca delinquo vorax.",
+                    "goal": 100,
+                    "start_value": 0,
+                    "type": 1,
+                    "currency_type": "R$",
+                    "signal": -1,
+                    "weight": null,
+                    "status": 0,
+                    "owner": {
+                        "id": 1,
+                        "name": "Hettie"
+                    },
+                    "checkins": [
+                        {
+                            "id": 4802269359282428,
+                            "id_profile": 1,
+                            "id_okr": 7554003830818236,
+                            "id_okr_kr": 2793910904164579,
+                            "value": 60.07649306964693,
+                            "status": "51.02",
+                            "description": "<p>Conspergo vesper textor sophismata ustulo.</p>",
+                            "dt_create": "2024-03-12T19:27:04.866Z",
+                            "profile": {
+                                "id": 1,
+                                "name": "Marques"
+                            }
+                        },
+                        {
+                            "id": 209443626980852,
+                            "id_profile": 1,
+                            "id_okr": 7554003830818236,
+                            "id_okr_kr": 2793910904164579,
+                            "value": 16.681174516887076,
+                            "status": "61.55",
+                            "description": "<p>Carpo degero amplitudo timor bis adeo cenaculum ter creta tepidus.</p>",
+                            "dt_create": "2024-05-15T21:01:32.695Z",
+                            "profile": {
+                                "id": 1,
+                                "name": "Tyson"
+                            }
+                        }
+                    ],
+                    "last_checkin_value": 33.73095750907039
+                },
+                {
+                    "id": 6564200471917212,
+                    "id_okr": 7554003830818236,
+                    "id_owner": 1,
+                    "text": "Terreo conservo tristis solium venia coma suus sperno.",
+                    "description": "Dapifer repudiandae arca a cupressus. Terreo nihil crinis amitto solus quis candidus mollitia perspiciatis quod. Tenax bestia ducimus.",
+                    "goal": 100,
+                    "start_value": 0,
+                    "type": 2,
+                    "currency_type": "R$",
+                    "signal": -1,
+                    "weight": null,
+                    "status": 0,
+                    "owner": {
+                        "id": 1,
+                        "name": "Roman"
+                    },
+                    "checkins": [
+                        {
+                            "id": 1766307637145029,
+                            "id_profile": 1,
+                            "id_okr": 7554003830818236,
+                            "id_okr_kr": 6564200471917212,
+                            "value": 79.33308566505382,
+                            "status": "87.80",
+                            "description": "<p>Combibo abduco cunae strues vita eius maiores cruciamentum adsum triduana.</p>",
+                            "dt_create": "2024-01-07T07:14:12.089Z",
+                            "profile": {
+                                "id": 1,
+                                "name": "Kathleen"
+                            }
+                        }
+                    ],
+                    "last_checkin_value": 0.460479269243963
+                },
+                {
+                    "id": 4789634641644330,
+                    "id_okr": 7554003830818236,
+                    "id_owner": 1,
+                    "text": "Crepusculum tantillus theatrum assumenda.",
+                    "description": "Adamo supellex porro xiphias voluptatem deleo deduco. Animadverto verus valeo. Abbas confugo sponte sursum arbor.",
+                    "goal": 100,
+                    "start_value": 0,
+                    "type": 2,
+                    "currency_type": "R$",
+                    "signal": 1,
+                    "weight": null,
+                    "status": 0,
+                    "owner": {
+                        "id": 1,
+                        "name": "Nils"
+                    },
+                    "checkins": [
+                        {
+                            "id": 6539956292209701,
+                            "id_profile": 1,
+                            "id_okr": 7554003830818236,
+                            "id_okr_kr": 4789634641644330,
+                            "value": 81.81299515064418,
+                            "status": "18.67",
+                            "description": "<p>Adfero cenaculum vis bene ter terra.</p>",
+                            "dt_create": "2024-11-11T15:36:44.712Z",
+                            "profile": {
+                                "id": 1,
+                                "name": "Dejuan"
+                            }
+                        },
+                        {
+                            "id": 5617014543578567,
+                            "id_profile": 1,
+                            "id_okr": 7554003830818236,
+                            "id_okr_kr": 4789634641644330,
+                            "value": 23.718388915888646,
+                            "status": "68.64",
+                            "description": "<p>Depulso fugit absque.</p>",
+                            "dt_create": "2024-08-25T07:58:54.825Z",
+                            "profile": {
+                                "id": 1,
+                                "name": "Gerhard"
+                            }
+                        }
+                    ],
+                    "last_checkin_value": 68.17998963344397
+                }
+            ],
+            "parent": null,
+            "department": {
+                "id": 3611,
+                "name": "Baby"
+            }
+        }
+    ]
+}
+```
 Faça uma requisição para a rota `/api/v1.0/tasks` passando os headers obrigatórios:
 ```bash
 curl -g "http://localhost:3000/api/v1.0/tasks" \
@@ -73,8 +252,7 @@ curl -g "http://localhost:3000/api/v1.0/tasks" \
 -H "User-Token: 9flMUzLxQtxohKGZjU5" \
 -H "Content-Type: application/json"
 ```
-
-**Resposta de Exemplo:**
+**Resposta de Exemplo(Tasks): **
 ```json
 {
   "tasks": [
